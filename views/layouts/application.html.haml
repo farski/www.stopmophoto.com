@@ -1,0 +1,32 @@
+!!!
+%html
+  %head
+    %meta{ 'http-equiv' => 'Content-Type', content: 'text/html; charset=utf-8' }
+    %meta{ name: 'lang', content: 'en' }
+    %meta{ name: 'viewport', content: 'width = device-width, initial-scale = 1.0, user-scalable = no'}
+    %title Stop Motion Photo | Personal sports photography | Southern New England
+
+    %link{ href: '/stylesheets/root.css', media: 'screen', rel: 'stylesheet', type: 'text/css' }
+    %link{ rel: 'icon', type: 'image/png', href: '/images/browser.png' }
+
+  - splashes = ['hurdle', 'ultimate', 'longjump', 'catcher', 'highjump']
+  %body{ 'data-splash' => splashes.sample }
+    %p Contact information: phone - (617) 297-7867, email: chris@stopmophoto.com
+
+    %ol#pilot
+      %li
+        %a{ href: '/photographer' } Photographer
+      %li
+        %a{ href: '/services' } Services
+      %li
+        %a{ href: '/prices' } Prices
+      %li
+        %a{ href: '/fundraisers' } Fundraisers
+      %li
+        %a{ href: '/contact' } Contact
+      %li
+        %a{ href: 'http://store.stopmophoto.com' } Buy Prints
+      %li
+        %iframe{ href: 'http://www.facebook.com/plugins/like.php?app_id=132972093443596&amp;href=https%3A%2F%2Fwww.facebook.com%2Fstopmotionphoto&amp;send=false&amp;layout=button_count&amp;width=450&amp;show_faces=false&amp;action=like&amp;colorscheme=light&amp;font&amp;height=21', scrolling: 'no', frameborder: 0, allowTransparency: true, }
+
+    = yield
