@@ -30,3 +30,14 @@
         %iframe{ href: 'http://www.facebook.com/plugins/like.php?app_id=132972093443596&amp;href=https%3A%2F%2Fwww.facebook.com%2Fstopmotionphoto&amp;send=false&amp;layout=button_count&amp;width=450&amp;show_faces=false&amp;action=like&amp;colorscheme=light&amp;font&amp;height=21', scrolling: 'no', frameborder: 0, allowTransparency: true, }
 
     = yield
+
+    :javascript
+      var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+      document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+
+    :javascript
+      try {
+      var pageTracker = _gat._getTracker("UA-9245964-1");
+      pageTracker._trackPageview();
+      } catch(err) {}
+
