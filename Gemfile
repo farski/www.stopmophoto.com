@@ -1,4 +1,4 @@
-source :rubygems
+source 'https://rubygems.org'
 
 gem 'sinatra', '~> 1.2.3'
 gem 'haml', '~> 3.1.4'
