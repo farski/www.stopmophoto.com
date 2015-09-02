@@ -1,0 +1,7 @@
+# Ignore bundled gem
+/.bundle
+/vendor/bundle
+
+_site/
+.sass-cache/
+.jekyll-metadata

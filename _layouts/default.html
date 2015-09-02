@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  {% include head.html %}
+
+  <body>
+
+    <p>Contact information: phone - (617) 297-7867, email: chris@stopmophoto.com</p>
+
+    <ol id="pilot">
+      <li>
+        <a href="/photographer">Photographer</a>
+      </li>
+      <li>
+        <a href="/services">Services</a>
+      </li>
+      <li>
+        <a href="/prices">Prices</a>
+      </li>
+      <li>
+        <a href="/fundraisers">Fundraisers</a>
+      </li>
+      <li>
+        <a href="/contact">Contact</a>
+      </li>
+      <li>
+        <a href="https://store.stopmophoto.com">Buy Prints</a>
+      </li>
+      <li>
+        <iframe href="http://www.facebook.com/plugins/like.php?app_id=132972093443596&amp;href=https%3A%2F%2Fwww.facebook.com%2Fstopmotionphoto&amp;send=false&amp;layout=button_count&amp;width=450&amp;show_faces=false&amp;action=like&amp;colorscheme=light&amp;font&amp;height=21" frameborder="0" scrolling="no" allowTransparency="true"></iframe>
+      </li>
+    </ol>
+
+    <div id="content">
+      {{ content }}
+    </div>
+
+    {% include tail.html %}
+  </body>
+</html>
